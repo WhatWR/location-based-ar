@@ -9,7 +9,7 @@ import SwiftUI
 import ARKit
 import RealityKit
 import Combine
-import LocationBasedAR
+//import LocationBasedAR
 
 
 class ARSessionManager: NSObject, ObservableObject {

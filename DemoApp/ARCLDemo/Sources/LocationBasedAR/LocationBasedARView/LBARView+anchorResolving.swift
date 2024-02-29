@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Miron Rogovets on 03.06.2021.
 //
@@ -56,7 +56,8 @@ public extension LBARView {
                         newAnchor = LBAnchor(from: oldAnchor, with: transform)
                         if let entity = anchorData.anchorEntity {
                             if entity.anchoring.target == .anchor(identifier: oldAnchor.identifier) {
-                                entity.anchoring = .init(newAnchor)
+                                let target = AnchoringComponent.Target.anchor(identifier: newAnchor.identifier)
+                                entity.anchoring = .init(target)
                             }
                         }
                     } else {
@@ -68,7 +69,9 @@ public extension LBARView {
                         )
                         if let entity = anchorData.anchorEntity {
                             switch entity.anchoring.target {
-                            case .anchor(_): entity.anchoring = .init(newAnchor)
+                            case .anchor(_):
+                                let target = AnchoringComponent.Target.anchor(identifier: newAnchor.identifier)
+                                entity.anchoring = .init(target)
                             default: break
                             }
                         }

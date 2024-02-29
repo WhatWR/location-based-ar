@@ -8,7 +8,7 @@
 import Foundation
 import RealityKit
 import ARKit
-import LocationBasedAR
+//import LocationBasedAR
 
 extension ARView {
     

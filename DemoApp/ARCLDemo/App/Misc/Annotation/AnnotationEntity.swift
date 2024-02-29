@@ -7,7 +7,7 @@
 
 import ARKit
 import RealityKit
-import LocationBasedAR
+//import LocationBasedAR
 
 
 class AnnotationEntity: Entity, HasAnchoring, HasAnnotationView {
@@ -19,7 +19,8 @@ class AnnotationEntity: Entity, HasAnchoring, HasAnnotationView {
     /// Also automatically initializes an associated StickyNoteView with the specified frame.
     init(frame: CGRect, anchor: LBAnchor) {
         super.init()
-        self.anchoring = AnchoringComponent(anchor)
+        
+        self.anchoring = AnchoringComponent(.anchor(identifier: anchor.identifier))
         // ...
         annotationComponent.view = AnnotationView(frame: frame, annotation: self)
         annotationComponent.view?.titleLabel.text = anchor.name

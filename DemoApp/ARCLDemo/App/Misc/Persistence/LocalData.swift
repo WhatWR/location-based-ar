@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreLocation
-import LocationBasedAR
+//import LocationBasedAR
 
 
 class LocalDataManager {

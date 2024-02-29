@@ -9,7 +9,7 @@ import SwiftUI
 import ARKit
 import RealityKit
 import FocusEntity
-import LocationBasedAR
+//import LocationBasedAR
 
 
 class FocusedARView: LBARView {

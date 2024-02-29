@@ -12,7 +12,7 @@ import CoreLocation
 
 
 open class LBAnchor: ARAnchor {
-    
+
     public let coordinate: CLLocationCoordinate2D
     public let accuracy: CLLocationAccuracy
     public let altitude: CLLocationDistance?

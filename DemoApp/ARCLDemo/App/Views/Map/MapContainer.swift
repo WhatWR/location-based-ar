@@ -7,7 +7,7 @@
 
 import SwiftUI
 import CoreLocation
-import LocationBasedAR
+//import LocationBasedAR
 
 struct MapContainer: View {
     

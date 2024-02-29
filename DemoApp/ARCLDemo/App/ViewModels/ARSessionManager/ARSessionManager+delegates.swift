@@ -8,7 +8,7 @@
 import Foundation
 import ARKit
 import RealityKit
-import LocationBasedAR
+//import LocationBasedAR
 
 
 extension ARSessionManager: LBARViewDelegate {

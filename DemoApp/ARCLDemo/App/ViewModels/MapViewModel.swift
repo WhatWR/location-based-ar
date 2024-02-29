@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 import CoreLocation
-import LocationBasedAR
+//import LocationBasedAR
 
 
 class MapViewModel: NSObject, ObservableObject {
